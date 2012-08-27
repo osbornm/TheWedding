@@ -1,0 +1,168 @@
+﻿body {
+    background: url('../images/main-background.gif') repeat;
+    color: #3d3d3d;
+    font-family: GrandesignNeueSerif;
+}
+
+a {
+    outline: 0;
+    color: #3d3d3d;
+}
+
+    .page-content {
+        margin: 0 auto;
+        width: 725px;
+    }
+    
+        /* Main Headings */
+        hgroup {
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        hgroup h1, hgroup h2 {
+            background: url('../images/main-header.png') no-repeat;
+            color: #4c4c4c;
+            font-family: Cubano;
+            font-size: 3em;
+            height: 130px;
+            line-height: 130px;
+            margin: 10px auto;
+            text-shadow: 3px 3px #f0f0f0;
+            text-transform: uppercase;
+            width: 540px;
+        }
+
+        hgroup h3 {
+            font-size: 1.3em;
+            font-weight: normal;
+            margin-left: auto;
+            margin-right: auto;
+            text-transform: uppercase;
+            width: 435px;
+        }
+        
+            hgroup h3.line {
+                background: url('../images/sub-header.gif') repeat-x 50%;
+            }
+  
+            hgroup h3 span {
+                background: url('../images/main-background.gif') repeat;
+                padding: 0 20px;
+            }
+        
+        
+        /* Body */
+        p {
+            font-size: .95em;
+            line-height: 1.5em;
+            text-align: justify;
+        }
+
+        hr {
+            background: url('../images/drawing.gif') no-repeat;
+            border: none;
+            height: 130px;
+            margin: 40px auto 80px auto;
+            width: 380px;
+        }
+        
+        /* Gallery */
+        #gallery {
+            margin: 60px auto 30px auto;
+        }
+        
+        figure {
+            border: solid 10px #fff;
+            height: 470px;
+            margin-bottom: 20px;
+            margin-left: 0;
+            position: relative;
+            width: 705px;
+        }
+
+            figcaption {
+                background-color: rgba(0,0,0,0.5);
+	            bottom: 0;
+                color: #fff;
+                display: none;
+	            left: 0;
+                padding: 10px;
+                position: absolute;
+                width: 685px;
+            }
+        
+        #images {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        
+            #images:after {
+                content: ".";
+                clear: both;
+                display: block;
+                height: 0;
+                visibility: hidden;
+            }
+            
+            #images li {
+                list-style: none;
+                float: left;
+                margin-bottom: 10px;
+                margin-right: 10px;
+            }
+            
+            #images li.last {
+                margin-right: 0;
+            }
+        
+                 #images li img {
+                    border: solid 10px #fff;
+                    height: 101px;
+                    width: 153px;
+                 }
+                 
+                 #images li img.selected {
+                    border: solid 10px #bed8d8;
+                 }
+        
+
+         /* Timeline */
+        
+        #timeline { 
+            list-style: none;
+            padding: 0 0 0 10px;
+        }
+        
+        #timeline li {
+            margin: 15px 0;
+        }
+        
+        #timeline h4 {
+            color: #4c4c4c;
+            display: inline-block;
+            font-family: Cubano;
+            font-size: 1.7em;
+            margin: 0;
+            padding: 0 10px 0 0;
+        }
+        
+        #timeline span {
+            font-size: 1.3em;
+        }
+        
+
+@font-face {
+    font-family: cubano;
+    src: url('../fonts/cubano-regular.woff'),
+         url('../fonts/cubano-regular.ttf'),
+         url('../fonts/cubano-regular.eot'); 
+}
+
+@font-face {
+    font-family: GrandesignNeueSerif;
+    src: url('../fonts/Grandesign-Neue-Serif.woff'),
+         url('../fonts/Grandesign-Neue-Serif.ttf'),
+         url('../fonts/Grandesign-Neue-Serif.eot'); 
+}
