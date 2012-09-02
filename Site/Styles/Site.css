@@ -152,6 +152,22 @@ a {
             font-size: 1.3em;
         }
         
+/* The Party */
+ul.party {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.party hgroup {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+    ul.party hgroup h4, 
+    ul.party hgroup h5 {
+        margin: 0;
+    }
+
 
 @font-face {
     font-family: cubano;

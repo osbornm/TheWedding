@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@Page.Title - Silewski Osborn Wedding</title>
+        <link href="@Href("~/Styles/Site.css")" rel="stylesheet" type="text/css" />
+        <script src="@Href("~/Scripts/modernizr-2.5.3.js")"></script>
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" type="image/ico" href="@Href("~/favicon.ico")">
+        <link rel="apple-touch-icon" href="@Href("~/images/appIcon.png")" />
+    </head>
+    <body>
+        <div class="page-content">
+            @RenderBody()
+        </div>
+        <script src="@Href("~/Scripts/jquery-1.7.2.min.js")"></script>
+        <script>
+            $(function() {
+                var myFullText = "";
+
+                $.each($('h3'), function() {
+                    $(this).addClass('line');
+                    myFullText = '<span>' + $(this).text() + '</span>';
+                    $(this).html(myFullText);
+                });
+            });
+        </script>
+        @RenderSection("Scripts", required: false)
+    </body>
+</html>
