@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Silewski Osborn Wedding</title>
+        <link href="@Href("~/Styles/Site.css")" rel="stylesheet" type="text/css" />
+        <script src="@Href("~/Scripts/modernizr-2.5.3.js")"></script>
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" type="image/ico" href="@Href("~/favicon.ico")">
+        <link rel="apple-touch-icon" href="@Href("~/images/appIcon.png")" />
+    </head>
+    <body>
+        <div class="page-content">
+            <hgroup>
+                <h1>The Ceremony</h1>
+                <h3>Ceremony &amp; Reception Info</h3>
+            </hgroup>
+
+            <p>Our wedding ceremony will take place at the Edgewater Hotel beginning, at 6:00pm in the 
+            Olympic Ballroom. A cocktail reception will be held from approximately 6:30pm - 7:30pm in the 
+            Terrace room, complete with small appetizers and complementry beer and wine. Plated 
+            dinner to begin at 7:30pm with dancing and drinks to follow until 12:00am.</p>
+
+            <ol id="timeline">
+                <li>
+                    <h4><time>6:00</time></h4>
+                    <span>Ceremony in Olympic Ballroom.</span>
+                </li>
+                <li>
+                    <h4><time>6:30</time></h4>
+                    <span>Cocktail reception in Terrace room.</span>
+                </li>
+                <li>
+                    <h4><time>7:30</time></h4>
+                    <span>Plated dinner and dancing in Olympic Ballroom.</span>
+                </li>
+                <li>
+                    <h4><time>12:00</time></h4>
+                    <span>Say goodbye to the happy newlyweds!</span>
+                </li>
+            </ol>
+
+            <p>* all times are Pacific Standard Time (PST, UTC-8) or local Seattle Time</p>
+
+            <figure id="coverImage">
+                <img src="@Href("~/images/edgewater.jpg")" alt="The Proposal" />
+                <figcaption>The historic Edgewater Hotel in downtown Seattle.</figcaption>
+            </figure>
+
+            <hgroup>
+                <h2>Location</h2>
+                <h3>Address &amp; Directions</h3>
+            </hgroup>
+            
+            <p>The ceremony and reception will both be held at the <a title="Visit the hotel website" href="http://www.edgewaterhotel.com/">Edgewater Hotel</a> 
+            located at <a title="View larger map" href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=The+Edgewater,+Alaskan+Way,+Seattle,+WA&amp;aq=0&amp;oq=Edge&amp;sll=47.612579,-122.352644&amp;sspn=0.009489,0.02002&amp;g=2411+Alaskan+Way+Seattle,+WA+98121&amp;ie=UTF8&amp;hq=The+Edgewater,+Alaskan+Way,+Seattle,+WA&amp;t=m&amp;ll=47.616694,-122.350101&amp;spn=0.013596,0.030212&amp;z=15&amp;iwloc=A">
+            2411 Alaskan Way Seattle, WA 98121</a>. If you are driving, valet parking is available for $?? at the Edgewater or you may also park across the 
+            street at the ? Garage for $??. If you are staying at the Hyatt Place hotel there is a shuttle available to guest, however, it is first come, 
+            first serve. Additionally, the hotel can call a taxi for your party or the Edgewater is a short six tenths of a mile walk down wall street.</p>
+
+            <iframe id="map" width="705" height="470" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+            src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=The+Edgewater,+Alaskan+Way,+Seattle,+WA&amp;aq=0&amp;oq=Edge&amp;sll=47.612579,-122.352644&amp;sspn=0.009489,0.02002&amp;g=2411+Alaskan+Way+Seattle,+WA+98121&amp;ie=UTF8&amp;hq=The+Edgewater,+Alaskan+Way,+Seattle,+WA&amp;t=m&amp;ll=47.616694,-122.350101&amp;spn=0.013596,0.030212&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+
+
+        </div>
+        <script src="@Href("~/Scripts/jquery-1.7.2.min.js")"></script>
+        <script>
+            $(function() {
+                var myFullText = "";
+
+                $.each($('h3'), function() {
+                    $(this).addClass('line');
+                    myFullText = '<span>' + $(this).text() + '</span>';
+                    $(this).html(myFullText);
+                });
+
+                $('#coverImage img').hover(function() {
+                    $('#coverImage figcaption').slideToggle('fast');
+                });
+
+            });
+        </script>
+    </body>
+</html>
