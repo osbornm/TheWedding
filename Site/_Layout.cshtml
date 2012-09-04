@@ -10,6 +10,16 @@
         <link rel="apple-touch-icon" href="@Href("~/images/appIcon.png")" />
     </head>
     <body>
+        <nav>
+            <ul>
+                <li><a href="@Href("~/")" class="@Page.home">Home</a></li>
+                <li><a href="@Href("~/Ceremony")" class="@Page.ceremony">Ceremony</a></li>
+                <li><a href="@Href("~/BridalParty")" class="@Page.bridalParty">Bridal Party</a></li>
+                <li><a href="@Href("~/Accommodations")" class="@Page.accommodations">Accommodations</a></li>
+                <li><a href="@Href("~/More")" class="@Page.more">More Info</a></li>
+                <li><a href="@Href("~/Pictures")" class="@Page.pictures">Pictures</a></li>
+            </ul>
+        </nav>
         <div class="page-content">
             @RenderBody()
             <hr />
