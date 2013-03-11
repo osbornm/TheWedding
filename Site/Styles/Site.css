@@ -1,4 +1,19 @@
-﻿body {
+﻿.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+body {
     background: url('../images/main-background.gif') repeat;
     color: #3d3d3d;
     font-family: GrandesignNeueSerif;
@@ -109,14 +124,21 @@ a {
             margin: 60px auto 30px auto;
         }
         
-        figure, #map, #map2 {
+        figure, #map {
             border: solid 10px #fff;
             height: 470px;
-            margin-bottom: 20px;
+            margin-bottom: 0;
             margin-left: 0;
             position: relative;
             width: 705px;
         }
+
+            small.caption {
+                width: 100%;
+                display: inline-block;
+                font-size: .95em;
+                text-align: right;
+            }
 
             figcaption {
                 background-color: rgba(0,0,0,0.5);
@@ -203,6 +225,87 @@ ul.party hgroup {
     ul.party hgroup h4, 
     ul.party hgroup h5 {
         margin: 0;
+    }
+
+
+/* The Activities */
+.row {
+    margin-bottom: 20px;
+}
+.row .cell {
+    display: inline-block;
+    width: 350px;
+    margin-right: 20px;
+}
+
+.row .cell:last-of-type{
+    margin-right: 0;
+}
+
+    .row .cell img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .row .cell hgroup {
+        display: inline-block;
+        margin: 0;
+        text-align: left;
+    }
+
+        .row .cell hgroup h4,
+        .row .cell hgroup h5 {
+            margin: 0;
+        }
+
+    .row .cell p {
+        margin: 5px 0 0 30px;;
+    }
+
+    #driving .column,
+    #walking .column {
+        text-align: center;
+        width: 235px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+        #driving .column ul,
+        #walking .column ul {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        #driving .column li,
+        #walking .column li {
+            margin-bottom: 7px;
+        }
+
+
+ul.featured {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.featured li {
+    width: 210px;
+    float: left;
+    padding: 10px;
+}
+
+ul.featured hgroup {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+    ul.featured hgroup h4, 
+    ul.featured hgroup h5 {
+        margin: 0;
+    }
+
+    ul.featured:after {
+        clear: both;
     }
 
     
