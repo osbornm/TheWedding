@@ -236,6 +236,7 @@ ul.party hgroup {
     display: inline-block;
     width: 350px;
     margin-right: 20px;
+    vertical-align: top;
 }
 
 .row .cell:last-of-type{
